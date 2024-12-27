@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title><script type="text/javascript">
+		// Kode Title Bergerak
+         var rev = "fwd";
+         function titlebar(val)
+         {
+         var msg = "My portofolio - M. Rizky Pratama";
+         var res = " ";
+         var speed = 200
+         var pos = val;
+         
+         msg = " " +msg+" ";
+         var le = msg.length;
+         if(rev == "fwd"){
+         if(pos < le){
+         pos = pos+1;
+         scroll = msg.substr(0,pos);
+         document.title = scroll;
+         timer = window.setTimeout("titlebar("+pos+")",speed);
+         }
+         else{
+         rev = "bwd";
+         timer = window.setTimeout("titlebar("+pos+")",speed);
+         }
+         }
+         else{
+         if(pos > 0){
+         pos = pos-1;
+         var ale = le-pos;
+         scrol = msg.substr(ale,le);
+         document.title = scrol;
+         timer = window.setTimeout("titlebar("+pos+")",speed);
+         }
+         else{
+         rev = "fwd";
+         timer = window.setTimeout("titlebar("+pos+")",speed);
+         } 
+         }
+         }
+         
+         titlebar(0);
+      </script>
+       <meta property="og:title" content="My Portofolio | Rizky" />
+       <meta property="og:url" content="https://rzkyp.my.id"/>
+       <meta property="og:image" content="https://l.top4top.io/p_3281ijlbd0.png"/>
+       <meta property="og:type" content="website"/>
+      <link rel="icon" type="image/png"  href="images/arts/icon.png">
+      <meta property="og:description" content="Web milik seorang anak yang ber ambisi untuk mempelajari tentang teknologi, yang saat ini semakin canggih" />
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top animate__animated animate__fadeInDown">
+    <div class="container">
+      <font color="white" class="display-2--intro" class="navbar-brand">My Portofolio | Home
+          
+      </font>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">about me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#myskill">my skill</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sertifikat">sertifikat</a></li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="nav-link dropdown-item" href="#contact">Third</a></li><li>
+        <hr class="dropdown-divider"></li>
+        <li><a class="nav-link dropdown-item" href="#myskill">Fourth</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="nav-link dropdown-item" href="#sertifikat">Fifth</a></li>
+    </ul>
+</li>
+          <li class="nav-item"><a class="nav-link" href="#contact">contact me</a>
+          </li>
+        </ul>
+        <button type="button" class="rounded-pill btn-rounded">
+          +6282280462726
+          <span><a href="https://wa.me/6282280462726">
+            <i class="fas fa-phone-alt"></i></a>
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+	<!--Kode Home-->
+<section id="home" class="intro-section">
+  <div class="container">
+    <div class="row align-items-center text-white">
+      <div class="col-md-6 intros text-start">
+        <h1 class="display-2">
+          <span class="display-2--intro  animate__animated animate__fadeInUp">Hey!, I'm M. Rizky Pratama </span>
+          <span class="display-2--description lh-base animate__animated animate__fadeInUp">
+            Hello, I am a student at Sriwijaya Polytechnic, I majored in Informatics Management because of my great interest in the field of informatics.
+          </span>
+        </h1>
+        <button type="button" class="rounded-pill btn-rounded animate__animated animate__fadeInUp">My Curiculum Vitae  <i class="fas fa-address-book "></i>
+          <span><a href="404.html"><i class="fas fa-arrow-right"></i></a></span>
+        </button>
+      </div>
+      <div class="col-md-6 intros text-end animate__animated animate__fadeInRight">
+          <img src="images/arts/Home.svg" alt="arts" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
+<br>
+<br>
+<br>
+<!--Information code-->
+<section id="myskill">
+  <center>
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold" data-aos="fade-up" data-aos-duration="1000">My Skill</h1>
+      <div class="heading-line mb-1" data-aos="fade-up" data-aos-duration="1000"></div><br><br>
+      <div class="text-center">               
+                <center>
+                <div class="skill" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><img src="icon/bootstrap.png" class="logo" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
+  <div class="progress-bar bootstrap"  data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400" style="width: 70%"><b><t>Bootstrap</t></b></div>
+</div> 
+
+<br>
+<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><img src="icon/capcut.webp" class="cc" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+  <div class="progress-bar capcut" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="600" style="width: 75%"><b><t>Capcut</t></b></div>
+</div>
+<br>
+<div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><img src="icon/python.png" class="logo" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
+  <div class="progress-bar python" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="800" style="width: 55%"><b><t>Python</t></b></div>
+</div>
+<br>
+<div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><img src="icon/c.png" class="logo" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
+  <div class="progress-bar --bs-primary" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000" style="width: 70%"><b><t>Bahasa C</t></b></div>
+</div><br>
+<div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><img src="icon/excel.png" class="logo" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1200">
+  <div class="progress-bar excel" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1200" style="width: 60%"><b><t>Microsoft Excel</t></b></div>
+</div><br>
+<div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><img src="icon/html.png" class="logo" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1400">
+  <div class="progress-bar html" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1400" style="width: 65%"><b><t>Html</t></b></div>
+</div><br>
+<div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><img src="icon/css.png" class="logo" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1600">
+  <div class="progress-bar css" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1600" style="width: 60%"><b><t>Css3</t></b></div>
+</div>
+<br>
+<div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><img src="icon/ppt.png" class="logo" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1800">
+  <div class="progress-bar ppt" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1800" style="width: 80%"><b><t>Power Point</t></b></div>
+</div>
+<br>
+<div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><img src="icon/word.png" class="logo" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000">
+  <div class="progress-bar word" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="2000" style="width: 90%"><b><t>Microsoft Word</t></b></div>
+</div>
+<br>
+<div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><img src="icon/potosop.png" class="logo" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2200">
+  <div class="progress-bar photoshop" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="2200" style="width: 65%"><b><t>Photoshop</t></b></div>
+</div>
+
+</center>
+                </div>
+     </div><br>
+     </center>
+</section>
+  
+<!--kode Sertifikat-->
+<center>
+ <section id="sertifikat" class="sertifikat">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+   <div class="container">
+    <div class="row text-center text-white" data-aos="fade-up" data-aos-duration="2000">
+      <h1 class="display-3 fw-bold">Sertifikat</h1>
+      <hr style="width: 100px; height: 3px; " class="mx-auto">
+
+     </div>
+
+    
+     <div class="row align-items-center" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="400">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+            
+            <div class="sertifikat__card">
+           <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+               This is my certificate of participation in the <b>Polsri Sport <br>Competition</b>
+		   by UKM Sports, Sriwijaya State Polytechnic on<br>
+		   December 12 2024. This certificate shows my commitment <br>
+		   to continue learning.
+                <i class="fas fa-quote-right"></i>
+                <br><br>
+                 <img src="images/sertifikat/Sertif1.jpg" alt="sertifikat1" class="shadow sertifikat_picture">
+                 
+              </p>
+            </div>
+            
+            
+
+          </div>     
+          
+          <div class="carousel-item">
+            
+            <div class="sertifikat__card">
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+              This is my certificate of participation in the seminar <b>Build <br>
+		      Realization To Educate with Digital Content</b> by Hmj Mi, <br>
+		      Sriwijaya State Polytechnic in 2024. This certificate shows my <br>commitment
+		      to increasing knowledge in the Digital field.
+                <i class="fas fa-quote-right"></i>
+
+                <br><br>
+                  <img src="images/sertifikat/Sertif2.jpg" alt="sertifikat2" class="shadow sertifikat_picture">
+                
+              </p>
+            </div>
+          </div>     
+          
+          <div class="carousel-item">
+            
+            <div class="sertifikat__card">
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+                This is my certificate of participation in <b>Web Training</b> by Hmj <br>Mi,
+		      Sriwijaya State Polytechnic in 2024. This certificate shows <br>
+		      my commitment to increasing my knowledge in <br>
+		      the field of Technology.
+                <i class="fas fa-quote-right"></i>
+
+                <br><br>
+                  <img src="images/sertifikat/Sertif3.jpg" alt="sertifikat3" class="shadow sertifikat_picture">
+                
+              </p>
+            </div>
+          </div>     
+        </div>
+        <br><br>
+        <div class="text-center">
+          <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        </button>
+        <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section> <br>
+</center>
+
+<!--kode contact me-->
+<section id="contact" class="get-started">
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold text-capitalize" data-aos="fade-up" data-aos-duration="2000">Contact Me</h1>
+      <div class="heading-line" data-aos="fade-up" data-aos-duration="2000"></div>
+      <p class="lh-lg" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+        Terimakasih telah berkunjung, jangan lupa berikan saran
+        kepada saya, apa saja kekurangan dari website saya👋😊🙏. 
+      </p>
+    </div>
+<center>
+      <div class="form-control col-12 col-lg-6 bg-white shadow p-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
+        <div class="form w-100 pb-2">
+          <form class="row">
+            <div class="col-lg-12 col-md mb-3">
+              <div class="form-asu">
+              <input type="text" placeholder="Your Name" class="name shadow form-control form-control-lg">
+              
+            </div></div>
+            <div class="col-lg-12 mb-3">
+              <div class="form-asu">
+              <input type="email" placeholder="Email Address" class="email shadow form-control form-control-lg">
+              
+            </div></div>
+            <div class="col-lg-12 mb-3">
+              <div class="form-asu">
+              <input type="nomor" placeholder="Nomor Handphone" class="nohp shadow form-control form-control-lg">
+              
+            </div></div>
+            <div class="col-lg-12 mb-3">
+              <div class="form-asu">
+              <textarea name="message" placeholder="Message" class="message shadow form-control form-control-lg" rows="5"></textarea>
+              
+            </div></div>
+            <center>
+            <div class="text-center d-grid mt-1 submit">
+              <button type="button" onclick="sendwhatsapp();" class="btn btn-primary rounded-pill pt-3 pb-3 ">
+                Submit 
+                  <i class="fas fa-paper-plane"></i>
+              </button>
+              </form>
+            </div
+            </center>
+        </div>
+      </div>
+    </div>
+  </span>
+</section>
+</center>
+
+<!--kode footer-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            <path d="M15 7a2 2 0 0 1 2 2" />
+            <path d="M15 3a6 6 0 0 1 6 6" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="https://wa.me/6282280462726" class="contact-box__info--title">+6282280462726</a>
+          <p class="contact-box__info--subtitle">  My Phone</p>
+        </div>
+      </div>  
+      
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <polyline points="3 9 12 15 21 9 12 3 3 9" />
+            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+            <line x1="3" y1="19" x2="9" y2="13" />
+            <line x1="15" y1="13" x2="21" y2="19" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="mailto:rizkypratama31477@gmail.com" class="contact-box__info--title">rizkypratama31477
+          @gmail.com</a>
+          <p class="contact-box__info--subtitle">Contact Me</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="18" y1="6" x2="18" y2="6.01" />
+            <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+            <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+            <line x1="9" y1="4" x2="9" y2="17" />
+            <line x1="15" y1="15" x2="15" y2="20" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="https://maps.app.goo.gl/r7fVZFhLFrwh4hug6" class="contact-box__info--title">Sumatera selatan, Indonesia</a>
+          <p class="contact-box__info--subtitle">Kec
+           Banyuasin, Kab. Banyuasin 1</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="footer-sm" style="background-color: #212121;">
+    <div class="container">
+      <div class="row py-4 text-center text-white">
+        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+          connect with us on social media
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <a href="https://www.tiktok.com/@hijrah_kyy?_t=8rK9n9ieW5o&_r=1"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/_rzkyy.__?igsh=MTdnbjgwZ2JwOHk1Yg=="><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/rzkyp"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.comq/in/rzkyp"><i class="fab fa-linkedin"></i></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script language=javascript>document.write(unescape('%20%20%3Cdiv%20class%3D%22footer-bottom%20pt-5%20pb-5%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%20text-center%20text-white%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-12%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22footer-bottom__copyright%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%26COPY%3B%20Copyright%20M.%20Rizky%20Pratama%7C2024%3Cbr%3E%3Cbr%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/div%3E'))</script>
+</footer>
+
+<!-- BACK TO TOP BUTTON  -->
+<a href="#" class="shadow btn-primary rounded-circle back-to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+      
+   <script src="assets/vendors/js/glightbox.min.js"></script>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+     
+     <script src="assets/js/script.js"></script>
+     
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+ 
+     
+</body>
+	      </html>
