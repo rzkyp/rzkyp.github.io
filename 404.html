@@ -1,0 +1,126 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title><script type="text/javascript">
+		// Kode Title Bergerak
+         var rev = "fwd";
+         function titlebar(val)
+         {
+         var msg = "not found 404 - something wrong...!!!";
+         var res = " ";
+         var speed = 200
+         var pos = val;
+         
+         msg = " " +msg+" ";
+         var le = msg.length;
+         if(rev == "fwd"){
+         if(pos < le){
+         pos = pos+1;
+         scroll = msg.substr(0,pos);
+         document.title = scroll;
+         timer = window.setTimeout("titlebar("+pos+")",speed);
+         }
+         else{
+         rev = "bwd";
+         timer = window.setTimeout("titlebar("+pos+")",speed);
+         }
+         }
+         else{
+         if(pos > 0){
+         pos = pos-1;
+         var ale = le-pos;
+         scrol = msg.substr(ale,le);
+         document.title = scrol;
+         timer = window.setTimeout("titlebar("+pos+")",speed);
+         }
+         else{
+         rev = "fwd";
+         timer = window.setTimeout("titlebar("+pos+")",speed);
+         } 
+         }
+         }
+         
+         titlebar(0);
+      </script>
+<center>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+<style>
+/*======================
+    404 page
+=======================*/
+
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'Poppins', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+			 font-size:80px;
+			 }
+			 
+	.found{
+	  color: black;
+	 text-decoration: none;
+	}
+			 
+			 .link_404{	
+	border-radius: 30rem;
+	color: black;
+    padding: 10px 20px;
+    background: #2a93d5;
+    margin: 20px 0;
+    display: inline-block;}
+	.contant_box_404{ margin-top:-50px;}
+	</style>
+</head>
+
+<body>
+<section class="page_404">
+	<div class="container">
+		<div class="row">	
+		<div class="col-sm-12 ">
+		<div class="col-sm-10 col-sm-offset-1  text-center">
+		<div class="four_zero_four_bg">
+			<h1 class="display-4--title mb-1">
+        <span><b>404</b></span></h1>
+		
+		
+		</div>
+		
+		<div class="contant_box_404">
+		<h3 class="display-2--intro"><b>
+		.::Something Wrong...!!!::.</b>
+		</h3>
+		
+		<p class="display-2--intro"><b><t>Sorry!!!, This page is under repair, sorry for your inconvenience, 
+			please understand, thank you.</t></b></p>
+		
+        <button type="button" class="link_404"><span><a class="found" href="/index.html">   Go back home
+         </a></span>
+        </button>
+	</div>
+		</div>
+		</div>
+		</div>
+	</div>
+</section>
+</center>
+</body>
+</html>
