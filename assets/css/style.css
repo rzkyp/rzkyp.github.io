@@ -11003,7 +11003,7 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
 }
 
-.nav, body, h1, p {
+.navbar, body, h1, p {
     position: relative; /* Agar teks tetap di atas kursor */
     z-index: 1; /* Mengatur z-index agar teks tidak tertutup kursor */
 }
