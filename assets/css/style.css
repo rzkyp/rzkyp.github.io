@@ -11003,7 +11003,7 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
 }
 
-body, h1, p {
+.nav, body, h1, p {
     position: relative; /* Agar teks tetap di atas kursor */
     z-index: 1; /* Mengatur z-index agar teks tidak tertutup kursor */
 }
@@ -11014,8 +11014,8 @@ body, h1, p {
     height: 10px; /* Ukuran partikel */
     background-color: black; /* Warna partikel */
     border-radius: 50%; /* Bentuk bulat */
-    pointer-events: none; /* Agar tidak mengganggu interaksi */
-    transform: translate(-50%, -50%); /* Pusatkan kursor */
+/*     pointer-events: none; /* Agar tidak mengganggu interaksi */
+    transform: translate(-50%, -50%); /* Pusatkan kursor */ */
     transition: transform 0.1s ease; /* Transisi untuk efek ekor */
 }
 
