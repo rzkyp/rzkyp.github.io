@@ -11021,8 +11021,8 @@ body, h1, p {
 
 .trail {
     position: absolute;
-    width: 4px; /* Ukuran ekor */
-    height: 4px; /* Ukuran ekor */
+    width: 20px; /* Ukuran ekor */
+    height: 20px; /* Ukuran ekor */
     background-color: black; /* Warna ekor */
     border-radius: 50%; /* Bentuk bulat */
     pointer-events: none; /* Agar tidak mengganggu interaksi */
