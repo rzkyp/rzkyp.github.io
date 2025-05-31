@@ -36,6 +36,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+    cursor: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
