@@ -28,8 +28,3 @@ Portofolio pribadi berbasis statis (HTML/CSS/JS) yang disajikan dengan GitHub Pa
 ## Jalankan
 
 Buka `index.html` langsung, atau aktifkan GitHub Pages pada branch default.
-
-
----
-
-<p align="center"><sub>Made with a little help from <b>Hermes</b> · dev colab with hermes</sub></p>
