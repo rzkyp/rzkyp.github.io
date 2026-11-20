@@ -12,6 +12,9 @@
 <p align="center">Portfolio · M. Rizky Pratama</p>
 
 <p align="center">
+  <img src="docs/logo.png" alt="ZEXO — ZeroDev" width="110">
+</p>
+<p align="center">
   <img src="https://img.shields.io/badge/GitHub%20Pages-222222" alt=""/>
   <img src="https://img.shields.io/badge/portfolio-purple" alt=""/>
   <img src="https://img.shields.io/badge/MIT-2ea043" alt=""/>
